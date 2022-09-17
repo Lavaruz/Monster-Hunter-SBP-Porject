@@ -1,0 +1,34 @@
+.armor-detail-main{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 5px;
+
+}
+.armor-detail-core{
+    padding: 0 2rem;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+.armor-detail-type-rank{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.armor-detail-type, .armor-detail-rank, .armor-detail-rarity{
+    text-align: center;
+    padding: .5rem;
+}
+.armor-detail-type h3, .armor-detail-rank h3, .armor-detail-rarity h3{
+    text-transform: capitalize;
+    margin: .5rem 0;
+}
+.armor-detail-type p, .armor-detail-rank p, .armor-detail-rarity p{
+    margin: 0;
+    color: rgb(145, 145, 145);
+}

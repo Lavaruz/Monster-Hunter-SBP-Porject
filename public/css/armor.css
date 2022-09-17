@@ -1,11 +1,22 @@
 .armors-main{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 1rem;
     text-align: center;
 }
 .armor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
     border: 1px solid lightgray;
     border-radius: 5px;
+    padding: 0 1rem;
+}
+.armor-info{
+    text-align: left;
+}
+.armor-info .armor-defense{
+    margin: 0;
 }
