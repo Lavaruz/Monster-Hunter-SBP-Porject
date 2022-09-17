@@ -1,18 +1,21 @@
 .armor-detail-main{
     padding: 1rem 0;
     display: grid;
-    grid-template-columns: max-content max-content 1fr;
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+    grid-template-columns: max-content 1fr;
     border-radius: 5px;
-
+    gap: 1rem;
 }
 .armor-detail-core{
     padding: 0 2rem;
     text-align: center;
     display: grid;
     justify-content: center;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.armor-detail-img img{
+    width: 150px;
 }
 .armor-detail-type-rank{
     padding: 1rem;
@@ -31,4 +34,48 @@
 .armor-detail-type p, .armor-detail-rank p, .armor-detail-rarity p{
     margin: 0;
     color: rgb(145, 145, 145);
+}
+
+.armor-detail-stat{
+    padding: 0 2rem;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
+}
+.defense-title{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 3rem;
+    margin: 1rem 0;
+}
+.defense-title p{
+    margin: 0;
+}
+.defense-bar{
+    width: 100%;
+    height: auto;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+}
+.defense-value{
+    background-color: #5dbe62;
+    text-align: center;
+    width: var(--w);
+    height: 100%;
+    border-radius: 20px;
+}
+.defense-value span{
+    font-size: .9rem;
+    color: #080808;
+}
+
+.resistances{
+    margin: 3rem 0 0;
+}
+.resistances-element{
+    display: flex;
+    gap: 2rem;
+}
+.resis-element p{
+    margin: 0;
 }

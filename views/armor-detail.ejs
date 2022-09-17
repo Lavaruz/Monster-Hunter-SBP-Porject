@@ -31,8 +31,53 @@
             </div>
         </div>
     </div>
-    <hr>
     <div class="armor-detail-stat">
-
+        <h3>Defense Stats</h3>
+        <div class="defense-stat">
+            <div class="defense-title">
+                <p>Base: </p>
+                <div class="defense-bar">
+                    <div class="defense-value" style="--w: <%=armor.defense.base/2%>%">
+                        <span><%=armor.defense.base%></span>
+                    </div>
+                </div>
+            </div>
+            <div class="defense-title">
+                <p>Max: </p>
+                <div class="defense-bar">
+                    <div class="defense-value" style="--w: <%=armor.defense.max/2%>%">
+                        <span><%=armor.defense.max%></span>
+                    </div>
+                </div>
+            </div>
+            <div class="defense-title">
+                <p>Augmented: </p>
+                <div class="defense-bar">
+                    <div class="defense-value" style="--w: <%=armor.defense.augmented/2%>%">
+                        <span><%=armor.defense.augmented%></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resistances">
+            <h3>Resistantces</h3>
+            <div class="resistances-element">
+                <div class="resis-element">
+                    <p><i class="fa-solid fa-fire" title="fire"></i>: <%= armor.resistances.fire %> </p>
+                </div>
+                <div class="resis-element">
+                    <p><i class="fa-solid fa-water" title="water"></i>: <%= armor.resistances.water %> </p>
+                </div>
+                <div class="resis-element">
+                    <p><i class="fa-solid fa-icicles" title="ice"></i>: <%= armor.resistances.ice %> </p>
+                </div>
+                <div class="resis-element">
+                    <p><i class="fa-solid fa-bolt-lightning" title="thunder"></i>: <%= armor.resistances.thunder %> </p>
+                </div>
+                <div class="resis-element">
+                    <p><i class="fa-solid fa-dragon" title="dragon"></i>: <%= armor.resistances.dragon %> </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
