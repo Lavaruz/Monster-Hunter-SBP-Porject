@@ -1,0 +1,6 @@
+<% items.forEach(item => { %>
+        <div class="armor">
+            <img src="<%= item.assets.imageMale %> " alt="">
+            <p><%= item.name %> </p>
+        </div>
+    <% }) %> 
